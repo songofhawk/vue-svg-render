@@ -1,7 +1,10 @@
 <template>
     <div id="app">
         <img alt="Vue logo" src="./assets/logo.jpg">
-        <SvgRender :title="svgData.title"/>
+        <SvgRender :svgData="svgData"/>
+        <div>
+            <button @click="changeR()">change</button>
+        </div>
     </div>
 </template>
 
@@ -16,9 +19,25 @@
         data() {
             return {
                 svgData: {
-                    title: 'something happens'
+                    title: 'something happens',
+                    graphs:[{
+                        x:180,
+                        y:90,
+                        r:35,
+                    }]
                 }
             }
+        },
+        mounted() {
+
+        },
+        methods:{
+            changeR(){
+                let times = 0;
+                setInterval(()=>{
+                    this.svgData.graphs[0].r = 40*(Math.sin((times+=0.01))+1);
+                },100)
+            },
         }
     }
 </script>
