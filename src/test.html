@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Test</title>
+    <style>
+        html {
+            background-color: #2c3e50;
+        }
+
+        .svg-container {
+            width: 800px;
+            height: 800px;
+            background-color: burlywood;
+            border: #2c3e50 2px solid;
+            color: #2c3e50;
+        }
+
+        .svg-panel {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+<!--<div id="svg-viewbox-test" class="svg-container">-->
+<!--    <svg id="customize-image-blend" class="svg-panel" xmlns="http://www.w3.org/2000/svg" viewBox="400 400 100 400"-->
+<!--         preserveAspectRatio="xMidYMid meet" width="80%" height="80%">-->
+<!--        <filter id="blurMe">-->
+<!--            <feGaussianBlur stdDeviation="5"/>-->
+<!--        </filter>-->
+
+<!--        <image href="../public/image/t-shirt-blue.jpeg"></image>-->
+<!--        <circle id="mycircle" cx="450" cy="650" r="50" fill="darkred"-->
+<!--                filter="url(#blurMe)"-->
+<!--        />-->
+<!--    </svg>-->
+<!--</div>-->
+
+<div id="svg-filter-test" class="svg-container">
+    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" class="svg-panel">
+<!--    <svg >-->
+        <defs>
+<!--            <image id="back-image" href="../public/image/t-shirt-blue-part.jpeg"></image>-->
+            <filter id="filter-blend-normal">
+                <feBlend mode="normal" in2="#back-image" in="SourceGraphic"/>
+            </filter>
+            <filter id="filter-blend-multiply">
+                <feBlend mode="multiply" in2="#back-image" in="SourceGraphic"/>
+            </filter>
+            <filter id="filter-blend-darken">
+                <feBlend mode="darken" in2="#back-image" in="SourceGraphic"/>
+            </filter>
+            <filter id="filter-compose-shadow">
+                <feComposite in="#back-image" in2="mycircle4" operator="arithmetic" k1="0" k2="1" k3="0" k4="0"></feComposite>
+            </filter>
+        </defs>
+
+        <filter id="filter">
+<!--            <feComposite in="base" in2="out" operator="over"/>-->
+<!--                <feComposite in="base" in2="out" operator="in"/>-->
+                <feComposite in="base" in2="SourceGraphic" operator="out"/>
+<!--                <feComposite in="base" in2="out" operator="atop"/>-->
+            <!--    result = k1*i1*i2 + k2*i1 + k3*i2 + k4-->
+<!--                <feComposite in="base" in2="out" operator="arithmetic" k1="1" k2="0" k3="0" k4="0.5"/>-->
+        </filter>
+        <image id="base" href="../public/image/t-shirt-blue-part.jpeg" height="100%" width="100%"/>
+        <image id="out" class="logo" href="./assets/logo.jpg" x="30%" y="45%" filter="url(#filter)" height="30" width="30"/>
+
+<!--        <image id="back-image" href="../public/image/t-shirt-blue-part.jpeg"></image>-->
+<!--        <circle id="mycircle1" cx="150" cy="100" r="50" fill="darkred" filter="url(#filter-blend-normal)"/>-->
+<!--        <circle id="mycircle2" cx="150" cy="200" r="50" fill="darkred" filter="url(#filter-blend-multiply)"/>-->
+<!--        <circle id="mycircle3" cx="150" cy="300" r="50" fill="darkred" filter="url(#filter-blend-darken)"/>-->
+<!--        <circle id="mycircle4" cx="150" cy="400" r="50" fill="darkred" filter="url(#filter-compose-shadow)"/>-->
+    </svg>
+</div>
+</body>
+</html>
