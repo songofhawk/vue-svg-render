@@ -1,30 +1,30 @@
 <template>
-    <div id="app">
-        <label>
-            <input v-model="svgData.title"/>
-        </label>
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg">
-                <g>
-                    <SvgItem v-for="graph in svgData[svgMapping.graphs]" :key="graph.id" :dataMapping="svgMapping" :graph="graph">
-                    </SvgItem>
-                </g>
-            </svg>
-        </div>
-    </div>
+    <g style=""
+       :style="{
+        transform: 'rotateX('+ graph.rotateX+'deg) '+'rotateY('+ graph.rotateY+'deg)',
+        transformOrigin:centerString
+       }
+    ">
+        <image v-if="graph[dataMapping.graphType]==='image'" :href="graph.href" :x="graph.x" :y="graph.y"
+               :width="graph.width" :height="graph.height"
+               :fill="graph.color || 'black'"/>
+
+        <text v-if="graph[dataMapping.graphType]==='text'" :x="graph.x" :y="graph.y"
+              :fill="graph.color || 'black'"
+              alignment-baseline="hanging" text-anchor="start"
+        >{{graph.text}}
+        </text>
+    </g>
 </template>
 
 <script>
-    import SvgItem from "./SvgItem";
     export default {
-        name: 'SvgRender',
-        components: {SvgItem},
+        name: 'SvgItem',
         props: {
-            svgMapping: {
-                graphs: String,
+            dataMapping: {
                 graphType: String,
             },
-            svgData: Object,
+            graph: Object,
             // svgData: {
             //     title:String,
             //     x:Number,
@@ -46,13 +46,19 @@
         //         }
         //     };
         // },
-        methods: {
-            getTransformOrigin(left, top, width, height) {
-                const x = left + width / 2;
-                const y = top + height / 2;
-                return x + 'px ' + y + 'px';
+        computed: {
+            centerX() {
+                return this.graph.x + this.graph.width / 2;
+            },
+            centerY() {
+                return this.graph.y + this.graph.height / 2;
+            },
+            centerString() {
+                return this.centerX + 'px ' + this.centerY + 'px';
             }
         }
+        ,
+        methods: {}
         ,
         beforeCreate() {
             // this.svgData = {

@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <img alt="Vue logo" src="./assets/logo.jpg">
-        <SvgRender :svgData="svgData"/>
+        <SvgRender :svgMapping="svgMapping" :svgData="svgData"/>
         <div>
             <button @click="changeR()">change</button>
         </div>
@@ -18,14 +18,34 @@
         },
         data() {
             return {
+                svgMapping: {
+                    "graphs":"designAreas",
+                    "graphType":"type",
+                },
                 svgData: {
                     title: 'something happens',
-                    graphs:[{
-                        x:180,
-                        y:90,
+                    designAreas:[{
+                        type:"image",
+                        x:0,
+                        y:0,
+                        width:96,
+                        height:96,
+                        rotateX:30,
+                        rotateY:30,
                         r:35,
-                    }]
-                }
+                        color:"green",
+                        href:"../image/logo.jpg",
+                    },{
+                        type:"text",
+                        text:"wwww.tzding.com",
+                        x:0,
+                        y:0,
+                        width:96,
+                        height:96,
+                        r:35,
+                        color:"blue"
+                    },]
+                },
             }
         },
         mounted() {
@@ -35,7 +55,7 @@
             changeR(){
                 let times = 0;
                 setInterval(()=>{
-                    this.svgData.graphs[0].r = 40*(Math.sin((times+=0.01))+1);
+                    this.svgData.designAreas[0].r = 40*(Math.sin((times+=0.01))+1);
                 },100)
             },
         }
