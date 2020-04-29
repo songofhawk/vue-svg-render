@@ -46,6 +46,9 @@
         //         }
         //     };
         // },
+        beforeMount() {
+            console.log(".....");
+        },
         computed: {
             centerX() {
                 return this.graph.x + this.graph.width / 2;

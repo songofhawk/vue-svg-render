@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <img alt="Vue logo" src="./assets/logo.jpg">
-        <SvgRender :svgMapping="svgMapping" :svgData="svgData"/>
+        <SvgRender :dataMapping="dataMapping" :graphData="graphData.viDesign"/>
         <div>
             <button @click="changeR()">change</button>
         </div>
@@ -10,6 +10,17 @@
 
 <script>
     import SvgRender from './components/SvgRender.vue'
+    import viDesign from './assets/data/vi_design.json'
+
+    viDesign.payload.detailImages[0].pgDesignAreaImageLabels.forEach((designArea)=>{
+        if (designArea.infoType==="LOGO"){
+            designArea.graphType = 'image';
+            designArea.href = "../image/logo.jpg";
+        }else{
+            designArea.graphType = 'text';
+            designArea.text = "wwww.tzding.com";
+        }
+    });
 
     export default {
         name: 'App',
@@ -18,32 +29,35 @@
         },
         data() {
             return {
-                svgMapping: {
-                    "graphs":"designAreas",
-                    "graphType":"type",
+                dataMapping: {
+                    "graphs": "pgDesignAreaImageLabels",
+                    itemMapping: {
+                        "graphType": "graphType",
+                    }
                 },
-                svgData: {
+                graphData: {
                     title: 'something happens',
-                    designAreas:[{
-                        type:"image",
-                        x:0,
-                        y:0,
-                        width:96,
-                        height:96,
-                        rotateX:30,
-                        rotateY:30,
-                        r:35,
-                        color:"green",
-                        href:"../image/logo.jpg",
-                    },{
-                        type:"text",
-                        text:"wwww.tzding.com",
-                        x:0,
-                        y:0,
-                        width:96,
-                        height:96,
-                        r:35,
-                        color:"blue"
+                    viDesign:viDesign.payload.detailImages[0],
+                    designAreas: [{
+                        type: "image",
+                        x: 0,
+                        y: 0,
+                        width: 96,
+                        height: 96,
+                        rotateX: 30,
+                        rotateY: 30,
+                        r: 35,
+                        color: "green",
+                        href: "../image/logo.jpg",
+                    }, {
+                        type: "text",
+                        text: "wwww.tzding.com",
+                        x: 0,
+                        y: 0,
+                        width: 96,
+                        height: 96,
+                        r: 35,
+                        color: "blue"
                     },]
                 },
             }
@@ -51,12 +65,14 @@
         mounted() {
 
         },
-        methods:{
-            changeR(){
+        methods: {
+            changeR() {
+                /* eslint-disable no-debugger */
                 let times = 0;
-                setInterval(()=>{
-                    this.svgData.designAreas[0].r = 40*(Math.sin((times+=0.01))+1);
-                },100)
+                setInterval(() => {
+                    this.svgData.designAreas[0].r = 40 * (Math.sin((times += 0.01)) + 1);
+                }, 100)
+                /* eslint-enable no-debugger */
             },
         }
     }

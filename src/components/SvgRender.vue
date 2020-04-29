@@ -1,12 +1,9 @@
 <template>
-    <div id="app">
-        <label>
-            <input v-model="svgData.title"/>
-        </label>
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg">
+    <div id="svg-render">
+        <div style="position: absolute">
+            <svg xmlns="http://www.w3.org/2000/svg" style="left: 0; top: 0; width: 2000px; height: 1000px">
                 <g>
-                    <SvgItem v-for="graph in svgData[svgMapping.graphs]" :key="graph.id" :dataMapping="svgMapping" :graph="graph">
+                    <SvgItem v-for="graph in graphData[dataMapping.graphs]" :key="graph.id" :dataMapping="dataMapping.itemMapping" :graph="graph">
                     </SvgItem>
                 </g>
             </svg>
@@ -20,11 +17,11 @@
         name: 'SvgRender',
         components: {SvgItem},
         props: {
-            svgMapping: {
+            dataMapping: {
                 graphs: String,
-                graphType: String,
+                itemMapping: Object,
             },
-            svgData: Object,
+            graphData: Object,
             // svgData: {
             //     title:String,
             //     x:Number,

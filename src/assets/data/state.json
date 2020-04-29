@@ -1,0 +1,1724 @@
+{
+  "statusCode": 200,
+  "payload": {
+    "cmCustomInfo": {
+      "NICK_NAME": "谷歌",
+      "PERSONAL_QRCODE": "/cm/7/39461/custom-info/personal_qrcode/personal_qrcode-39461-40063.png",
+      "SERIAL_NUMBER": "编号",
+      "LOGO": "/cm/7/39461/custom-info/logo/logo-39461-40063.png",
+      "DEPARTMENT": "部门",
+      "EN_SLOGAN": "英文SLOGAN",
+      "PHOTO": "/cm/7/39461/custom-info/photo/photo-39461-40063.png",
+      "ADDRESS_CODE": "guge",
+      "ORG_URL": "www.google.com",
+      "FULL_NAME": "谷歌",
+      "POSITION": "职位"
+    },
+    "submitCustomInfo": {
+      "NICK_NAME": "谷歌",
+      "PERSONAL_QRCODE": "/cm/7/39461/custom-info/personal_qrcode/personal_qrcode-39461-40063.png",
+      "SERIAL_NUMBER": "编号",
+      "LOGO": "/cm/7/39461/custom-info/logo/logo-39461-40063.png",
+      "DEPARTMENT": "部门",
+      "EN_SLOGAN": "英文SLOGAN",
+      "PHOTO": "/cm/7/39461/custom-info/photo/photo-39461-40063.png",
+      "ADDRESS_CODE": "guge",
+      "ORG_URL": "www.google.com",
+      "FULL_NAME": "谷歌",
+      "POSITION": "职位"
+    },
+    "isMyCustomSpace": true,
+    "isWhite": false,
+    "cmCustomState": "SUBMITTED",
+    "cmInfo": {
+      "cm": {
+        "name": "谷歌",
+        "fullName": "谷歌",
+        "templateId": 1,
+        "userId": 14,
+        "addressCode": "guge",
+        "state": "UNAUTHORIZED",
+        "adminId": 14,
+        "createType": "SINGLE_BY_USER",
+        "provinceCode": "110000",
+        "cityCode": "110100",
+        "templateCode": "enterprise",
+        "hasSentGift": 0,
+        "msgSendCount": 0,
+        "emailSendCount": 0,
+        "useScenario": 1,
+        "lastVisitDate": "2020-04-29 00:00:00",
+        "id": 39461,
+        "deleteState": 0
+      }
+    },
+    "history": {
+      "NICK_NAME": [
+        {
+          "userId": 14,
+          "customId": 40218,
+          "infoType": "NICK_NAME",
+          "infoTypeHump": "nickName",
+          "infoValue": "天助定logo",
+          "imgUrl": "天助定logo",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 507
+        },
+        {
+          "userId": 14,
+          "customId": 40166,
+          "infoType": "NICK_NAME",
+          "infoTypeHump": "nickName",
+          "infoValue": "简鸣资本",
+          "imgUrl": "简鸣资本",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 455
+        },
+        {
+          "userId": 14,
+          "customId": 40165,
+          "infoType": "NICK_NAME",
+          "infoTypeHump": "nickName",
+          "infoValue": "谷歌",
+          "imgUrl": "谷歌",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 445
+        },
+        {
+          "userId": 14,
+          "customId": 40066,
+          "infoType": "NICK_NAME",
+          "infoTypeHump": "nickName",
+          "infoValue": "毛豆科技",
+          "imgUrl": "毛豆科技",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 341
+        },
+        {
+          "userId": 14,
+          "customId": 39843,
+          "infoType": "NICK_NAME",
+          "infoTypeHump": "nickName",
+          "infoValue": "测试jpg",
+          "imgUrl": "测试jpg",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 115
+        },
+        {
+          "userId": 14,
+          "customId": 39838,
+          "infoType": "NICK_NAME",
+          "infoTypeHump": "nickName",
+          "infoValue": "阿拉蕾",
+          "imgUrl": "阿拉蕾",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 110
+        }
+      ],
+      "SERIAL_NUMBER": [
+        {
+          "userId": 14,
+          "customId": 40165,
+          "infoType": "SERIAL_NUMBER",
+          "infoTypeHump": "serialNumber",
+          "infoValue": "编号",
+          "imgUrl": "编号",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 451
+        },
+        {
+          "userId": 14,
+          "customId": 40066,
+          "infoType": "SERIAL_NUMBER",
+          "infoTypeHump": "serialNumber",
+          "infoValue": "110900",
+          "imgUrl": "110900",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 347
+        }
+      ],
+      "LOGO2": [
+        {
+          "userId": 14,
+          "customId": 40220,
+          "infoType": "LOGO2",
+          "infoTypeHump": "logo2",
+          "infoValue": "/cm/7/39354/custom-info-auth/logo2/logo2-39354-40220.png",
+          "imgUrl": "/cm/7/39354/custom-info-auth/logo2/logo2-39354-40220.png",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 515
+        },
+        {
+          "userId": 14,
+          "customId": 40219,
+          "infoType": "LOGO2",
+          "infoTypeHump": "logo2",
+          "infoValue": "/cm/7/39467/custom-info-auth/logo2/logo2-39467-40219.png",
+          "imgUrl": "/cm/7/39467/custom-info-auth/logo2/logo2-39467-40219.png",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 513
+        },
+        {
+          "userId": 14,
+          "customId": 40218,
+          "infoType": "LOGO2",
+          "infoTypeHump": "logo2",
+          "infoValue": "/cm/7/39467/custom-info/logo2/logo2-39467-40100.png",
+          "imgUrl": "/cm/7/39467/custom-info/logo2/logo2-39467-40100.png",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 509
+        }
+      ],
+      "EN_SLOGAN": [
+        {
+          "userId": 14,
+          "customId": 40066,
+          "infoType": "EN_SLOGAN",
+          "infoTypeHump": "enSlogan",
+          "infoValue": "英文SLOGAN",
+          "imgUrl": "英文SLOGAN",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 344
+        }
+      ],
+      "FULL_NAME": [
+        {
+          "userId": 14,
+          "customId": 40218,
+          "infoType": "FULL_NAME",
+          "infoTypeHump": "fullName",
+          "infoValue": "天助定logo",
+          "imgUrl": "天助定logo",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 508
+        },
+        {
+          "userId": 14,
+          "customId": 40166,
+          "infoType": "FULL_NAME",
+          "infoTypeHump": "fullName",
+          "infoValue": "简鸣资本",
+          "imgUrl": "简鸣资本",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 456
+        },
+        {
+          "userId": 14,
+          "customId": 40165,
+          "infoType": "FULL_NAME",
+          "infoTypeHump": "fullName",
+          "infoValue": "谷歌",
+          "imgUrl": "谷歌",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 446
+        },
+        {
+          "userId": 14,
+          "customId": 40066,
+          "infoType": "FULL_NAME",
+          "infoTypeHump": "fullName",
+          "infoValue": "北京毛豆科技有限公司",
+          "imgUrl": "北京毛豆科技有限公司",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 342
+        },
+        {
+          "userId": 14,
+          "customId": 39843,
+          "infoType": "FULL_NAME",
+          "infoTypeHump": "fullName",
+          "infoValue": "测试jpg",
+          "imgUrl": "测试jpg",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 116
+        },
+        {
+          "userId": 14,
+          "customId": 39838,
+          "infoType": "FULL_NAME",
+          "infoTypeHump": "fullName",
+          "infoValue": "阿拉蕾",
+          "imgUrl": "阿拉蕾",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 111
+        }
+      ],
+      "ADDRESS_CODE": [
+        {
+          "userId": 14,
+          "customId": 40218,
+          "infoType": "ADDRESS_CODE",
+          "infoTypeHump": "addressCode",
+          "infoValue": "tianzhudinglogo",
+          "imgUrl": "tianzhudinglogo",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 511
+        },
+        {
+          "userId": 14,
+          "customId": 40166,
+          "infoType": "ADDRESS_CODE",
+          "infoTypeHump": "addressCode",
+          "infoValue": "jianmingziben",
+          "imgUrl": "jianmingziben",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 459
+        },
+        {
+          "userId": 14,
+          "customId": 40165,
+          "infoType": "ADDRESS_CODE",
+          "infoTypeHump": "addressCode",
+          "infoValue": "guge",
+          "imgUrl": "guge",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 453
+        },
+        {
+          "userId": 14,
+          "customId": 40066,
+          "infoType": "ADDRESS_CODE",
+          "infoTypeHump": "addressCode",
+          "infoValue": "maodoukeji",
+          "imgUrl": "maodoukeji",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 348
+        },
+        {
+          "userId": 14,
+          "customId": 39843,
+          "infoType": "ADDRESS_CODE",
+          "infoTypeHump": "addressCode",
+          "infoValue": "ceshijpg",
+          "imgUrl": "ceshijpg",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 117
+        },
+        {
+          "userId": 14,
+          "customId": 39838,
+          "infoType": "ADDRESS_CODE",
+          "infoTypeHump": "addressCode",
+          "infoValue": "alalei",
+          "imgUrl": "alalei",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 113
+        },
+        {
+          "userId": 14,
+          "customId": 39735,
+          "infoType": "ADDRESS_CODE",
+          "infoTypeHump": "addressCode",
+          "infoValue": "c382fd48833d4fe6886bf0fe13274147",
+          "imgUrl": "c382fd48833d4fe6886bf0fe13274147",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 30
+        }
+      ],
+      "ORG_URL": [
+        {
+          "userId": 14,
+          "customId": 40220,
+          "infoType": "ORG_URL",
+          "infoTypeHump": "orgUrl",
+          "infoValue": "www.moredo.com",
+          "imgUrl": "www.moredo.com",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 516
+        },
+        {
+          "userId": 14,
+          "customId": 40218,
+          "infoType": "ORG_URL",
+          "infoTypeHump": "orgUrl",
+          "infoValue": "www.tzding.com",
+          "imgUrl": "www.tzding.com",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 510
+        },
+        {
+          "userId": 14,
+          "customId": 40166,
+          "infoType": "ORG_URL",
+          "infoTypeHump": "orgUrl",
+          "infoValue": "www.jmcapital.cn",
+          "imgUrl": "www.jmcapital.cn",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 458
+        },
+        {
+          "userId": 14,
+          "customId": 40165,
+          "infoType": "ORG_URL",
+          "infoTypeHump": "orgUrl",
+          "infoValue": "www.google.com",
+          "imgUrl": "www.google.com",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 452
+        }
+      ],
+      "POSITION": [
+        {
+          "userId": 14,
+          "customId": 40165,
+          "infoType": "POSITION",
+          "infoTypeHump": "position",
+          "infoValue": "职位",
+          "imgUrl": "职位",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 450
+        },
+        {
+          "userId": 14,
+          "customId": 40066,
+          "infoType": "POSITION",
+          "infoTypeHump": "position",
+          "infoValue": "CTO",
+          "imgUrl": "CTO",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 346
+        }
+      ],
+      "NAME": [
+        {
+          "userId": 14,
+          "customId": 40066,
+          "infoType": "NAME",
+          "infoTypeHump": "name",
+          "infoValue": "宋辉",
+          "imgUrl": "宋辉",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 340
+        },
+        {
+          "userId": 14,
+          "customId": 39838,
+          "infoType": "NAME",
+          "infoTypeHump": "name",
+          "infoValue": "姓名",
+          "imgUrl": "姓名",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 109
+        },
+        {
+          "userId": 14,
+          "customId": 39735,
+          "infoType": "NAME",
+          "infoTypeHump": "name",
+          "infoValue": "闫雪很贵",
+          "imgUrl": "闫雪很贵",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 28
+        }
+      ],
+      "PERSONAL_QRCODE": [
+        {
+          "userId": 14,
+          "customId": 40165,
+          "infoType": "PERSONAL_QRCODE",
+          "infoTypeHump": "personalQrcode",
+          "infoValue": "/cm/7/39461/custom-info/personal_qrcode/personal_qrcode-39461-40063.png",
+          "imgUrl": "/cm/7/39461/custom-info/personal_qrcode/personal_qrcode-39461-40063.png",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 448
+        }
+      ],
+      "LOGO": [
+        {
+          "userId": 14,
+          "customId": 40220,
+          "infoType": "LOGO",
+          "infoTypeHump": "logo",
+          "infoValue": "/cm/7/39354/custom-info-auth/logo/logo-39354-40220.png",
+          "imgUrl": "/cm/7/39354/custom-info-auth/logo/logo-39354-40220.png",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 514
+        },
+        {
+          "userId": 14,
+          "customId": 40219,
+          "infoType": "LOGO",
+          "infoTypeHump": "logo",
+          "infoValue": "/cm/7/39467/custom-info-auth/logo/logo-39467-40219.png",
+          "imgUrl": "/cm/7/39467/custom-info-auth/logo/logo-39467-40219.png",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 512
+        },
+        {
+          "userId": 14,
+          "customId": 40166,
+          "infoType": "LOGO",
+          "infoTypeHump": "logo",
+          "infoValue": "/cm/7/39360/custom-info/logo/logo-39360-39863.png",
+          "imgUrl": "/cm/7/39360/custom-info/logo/logo-39360-39863.png",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 457
+        },
+        {
+          "userId": 14,
+          "customId": 40165,
+          "infoType": "LOGO",
+          "infoTypeHump": "logo",
+          "infoValue": "/cm/7/39461/custom-info/logo/logo-39461-40063.png",
+          "imgUrl": "/cm/7/39461/custom-info/logo/logo-39461-40063.png",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 447
+        },
+        {
+          "userId": 14,
+          "customId": 40066,
+          "infoType": "LOGO",
+          "infoTypeHump": "logo",
+          "infoValue": "/cm/7/39354/custom-info/logo/logo-39354-39837.png",
+          "imgUrl": "/cm/7/39354/custom-info/logo/logo-39354-39837.png",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 343
+        },
+        {
+          "userId": 14,
+          "customId": 1248,
+          "infoType": "LOGO",
+          "infoTypeHump": "logo",
+          "infoValue": "/user/0/14/1248/logo/logo-14-1248.png",
+          "imgUrl": "/user/0/14/1248/logo/logo-14-1248.png",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 156
+        },
+        {
+          "userId": 14,
+          "customId": 39838,
+          "infoType": "LOGO",
+          "infoTypeHump": "logo",
+          "infoValue": "/cm/7/38917/custom-info-auth/logo/logo-38917-39838.png",
+          "imgUrl": "/cm/7/38917/custom-info-auth/logo/logo-38917-39838.png",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 112
+        },
+        {
+          "userId": 14,
+          "customId": 1115,
+          "infoType": "LOGO",
+          "infoTypeHump": "logo",
+          "infoValue": "/user/0/14/1115/logo/logo-14-1115.png",
+          "imgUrl": "/user/0/14/1115/logo/logo-14-1115.png",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 104
+        },
+        {
+          "userId": 14,
+          "customId": 39735,
+          "infoType": "LOGO",
+          "infoTypeHump": "logo",
+          "infoValue": "/cm/7/39124/custom-info/logo/logo-39124-39524.png",
+          "imgUrl": "/cm/7/39124/custom-info/logo/logo-39124-39524.png",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 29
+        }
+      ],
+      "DEPARTMENT": [
+        {
+          "userId": 14,
+          "customId": 40165,
+          "infoType": "DEPARTMENT",
+          "infoTypeHump": "department",
+          "infoValue": "部门",
+          "imgUrl": "部门",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 449
+        },
+        {
+          "userId": 14,
+          "customId": 40066,
+          "infoType": "DEPARTMENT",
+          "infoTypeHump": "department",
+          "infoValue": "技术部",
+          "imgUrl": "技术部",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 345
+        }
+      ],
+      "PHOTO": [
+        {
+          "userId": 14,
+          "customId": 40165,
+          "infoType": "PHOTO",
+          "infoTypeHump": "photo",
+          "infoValue": "/cm/7/39461/custom-info/photo/photo-39461-40063.png",
+          "imgUrl": "/cm/7/39461/custom-info/photo/photo-39461-40063.png",
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "isInUse": false,
+          "id": 454
+        }
+      ]
+    },
+    "cmCustom": {
+      "seq": 2,
+      "customType": "CM",
+      "cmId": 39461,
+      "userId": 14,
+      "authState": "SUBMITTED",
+      "currentUse": true,
+      "cmCustomInfos": [
+        {
+          "cmId": 39461,
+          "cmCustomId": 40165,
+          "customType": "CM",
+          "infoType": "NICK_NAME",
+          "infoTypeHump": "nickName",
+          "infoValue": "谷歌",
+          "imgUrl": "/cm/7/39461/custom-info/nick-name/nick-name-39461-40165.png",
+          "fontAspectRatios": [
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.309999942779541,
+              0.3199999928474426
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.840000033378601,
+              0.44999998807907104
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.5,
+              0.3799999952316284
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.940000057220459,
+              0.47999998927116394
+            ],
+            [
+              1.6299999952316284,
+              0.4000000059604645
+            ],
+            [
+              1.940000057220459,
+              0.47999998927116394
+            ],
+            [
+              1.940000057220459,
+              0.47999998927116394
+            ],
+            [
+              1.7599999904632568,
+              0.4399999976158142
+            ],
+            [
+              1.6699999570846558,
+              0.41999998688697815
+            ],
+            [
+              1.6699999570846558,
+              0.41999998688697815
+            ],
+            [
+              1.6200000047683716,
+              0.4099999964237213
+            ]
+          ],
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "needImageCompose": true,
+          "isInUse": false,
+          "id": 3960010,
+          "deleteState": 0,
+          "createTime": "2020-04-24 21:03:07",
+          "updateTime": "2020-04-24 21:03:09",
+          "createBy": 14,
+          "updateBy": -2
+        },
+        {
+          "cmId": 39461,
+          "cmCustomId": 40165,
+          "customType": "CM",
+          "infoType": "FULL_NAME",
+          "infoTypeHump": "fullName",
+          "infoValue": "谷歌",
+          "imgUrl": "/cm/7/39461/custom-info/full-name/full-name-39461-40165.png",
+          "fontAspectRatios": [
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.309999942779541,
+              0.3199999928474426
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.840000033378601,
+              0.44999998807907104
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.5,
+              0.3799999952316284
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.940000057220459,
+              0.47999998927116394
+            ],
+            [
+              1.6299999952316284,
+              0.4000000059604645
+            ],
+            [
+              1.940000057220459,
+              0.47999998927116394
+            ],
+            [
+              1.940000057220459,
+              0.47999998927116394
+            ],
+            [
+              1.7599999904632568,
+              0.4399999976158142
+            ],
+            [
+              1.6699999570846558,
+              0.41999998688697815
+            ],
+            [
+              1.6699999570846558,
+              0.41999998688697815
+            ],
+            [
+              1.6200000047683716,
+              0.4099999964237213
+            ]
+          ],
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "needImageCompose": true,
+          "isInUse": false,
+          "id": 3960011,
+          "deleteState": 0,
+          "createTime": "2020-04-24 21:03:07",
+          "updateTime": "2020-04-24 21:03:09",
+          "createBy": 14,
+          "updateBy": -2
+        },
+        {
+          "cmId": 39461,
+          "cmCustomId": 40165,
+          "customType": "CM",
+          "infoType": "LOGO",
+          "infoTypeHump": "logo",
+          "infoValue": "/cm/7/39461/custom-info/logo/logo-39461-40063.png",
+          "imgUrl": "/cm/7/39461/custom-info/logo/logo-39461-40063.png",
+          "aspectRatio": 3.05,
+          "colorTone": [
+            "#4D88E4",
+            "#E47042",
+            "#E4A94D",
+            "#DBD7DB"
+          ],
+          "colorRgbTone": [
+            [
+              77,
+              136,
+              228
+            ],
+            [
+              228,
+              112,
+              66
+            ],
+            [
+              228,
+              169,
+              77
+            ],
+            [
+              219,
+              215,
+              219
+            ]
+          ],
+          "colorHSLTone": [
+            [
+              0.6015452538631346,
+              0.7365853658536586,
+              0.5980392156862745
+            ],
+            [
+              0.04732510288065843,
+              0.7499999999999999,
+              0.5764705882352942
+            ],
+            [
+              0.10154525386313464,
+              0.7365853658536586,
+              0.5980392156862745
+            ],
+            [
+              0.8333333333333334,
+              0.052631578947368245,
+              0.8509803921568627
+            ]
+          ],
+          "colorCMYKRgbTone": [
+            [
+              80,
+              127,
+              192
+            ],
+            [
+              218,
+              108,
+              64
+            ],
+            [
+              221,
+              164,
+              77
+            ],
+            [
+              219,
+              213,
+              217
+            ]
+          ],
+          "colorCMYKHSLTone": [
+            [
+              0.5967261904761905,
+              0.4705882352941176,
+              0.5333333333333333
+            ],
+            [
+              0.04761904761904762,
+              0.6754385964912281,
+              0.5529411764705883
+            ],
+            [
+              0.10069444444444446,
+              0.679245283018868,
+              0.5843137254901961
+            ],
+            [
+              0.8888888888888888,
+              0.07692307692307668,
+              0.8470588235294118
+            ]
+          ],
+          "isWhite": false,
+          "isTransformTransparent": true,
+          "blackWhiteGraphPng": "/cm/7/39461/custom-info/logo/logo-39461-40063_blackWhiteGraph.png",
+          "grayscalePng": "/cm/7/39461/custom-info/logo/logo-39461-40063_blackWhiteGraph.png",
+          "needImageCompose": true,
+          "originalImageSuffix": "jpeg",
+          "isInUse": false,
+          "id": 3960012,
+          "deleteState": 0,
+          "createTime": "2020-04-24 21:03:07",
+          "updateTime": "2020-04-24 21:03:07",
+          "createBy": 14,
+          "updateBy": 14
+        },
+        {
+          "cmId": 39461,
+          "cmCustomId": 40165,
+          "customType": "CM",
+          "infoType": "EN_SLOGAN",
+          "infoTypeHump": "enSlogan",
+          "infoValue": "英文SLOGAN",
+          "imgUrl": "/cm/7/39461/custom-info/en_slogan/en_slogan-39461-40165.png",
+          "fontAspectRatios": [
+            [
+              4.289999961853027,
+              0.05999999865889549
+            ],
+            [
+              4.289999961853027,
+              0.05999999865889549
+            ],
+            [
+              3.690000057220459,
+              0.05999999865889549
+            ],
+            [
+              5.570000171661377,
+              0.09000000357627869
+            ],
+            [
+              5.710000038146973,
+              0.09000000357627869
+            ],
+            [
+              5.409999847412109,
+              0.07999999821186066
+            ],
+            [
+              5.199999809265137,
+              0.07999999821186066
+            ],
+            [
+              4.349999904632568,
+              0.07000000029802322
+            ],
+            [
+              6.860000133514404,
+              0.10999999940395357
+            ],
+            [
+              4.840000152587891,
+              0.07000000029802322
+            ],
+            [
+              5.03000020980835,
+              0.07999999821186066
+            ],
+            [
+              6.190000057220459,
+              0.10000000149011612
+            ],
+            [
+              6.230000019073486,
+              0.10000000149011612
+            ],
+            [
+              4.409999847412109,
+              0.07000000029802322
+            ],
+            [
+              4.190000057220459,
+              0.05999999865889549
+            ],
+            [
+              5.440000057220459,
+              0.07999999821186066
+            ],
+            [
+              5.409999847412109,
+              0.07999999821186066
+            ]
+          ],
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "needImageCompose": true,
+          "isInUse": false,
+          "id": 3960013,
+          "deleteState": 0,
+          "createTime": "2020-04-24 21:03:07",
+          "updateTime": "2020-04-24 21:03:09",
+          "createBy": 14,
+          "updateBy": -2
+        },
+        {
+          "cmId": 39461,
+          "cmCustomId": 40165,
+          "customType": "CM",
+          "infoType": "PERSONAL_QRCODE",
+          "infoTypeHump": "personalQrcode",
+          "infoValue": "/cm/7/39461/custom-info/personal_qrcode/personal_qrcode-39461-40063.png",
+          "imgUrl": "/cm/7/39461/custom-info/personal_qrcode/personal_qrcode-39461-40063.png",
+          "aspectRatio": 1.00,
+          "colorTone": [
+            "#000000",
+            "#000000",
+            "#000000",
+            "#7A7A7A"
+          ],
+          "colorRgbTone": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              122,
+              122,
+              122
+            ]
+          ],
+          "colorHSLTone": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.4784313725490196
+            ]
+          ],
+          "colorCMYKRgbTone": [
+            [
+              6,
+              1,
+              1
+            ],
+            [
+              6,
+              1,
+              1
+            ],
+            [
+              6,
+              1,
+              1
+            ],
+            [
+              122,
+              121,
+              121
+            ]
+          ],
+          "colorCMYKHSLTone": [
+            [
+              0.0,
+              0.7142857142857143,
+              0.013725490196078431
+            ],
+            [
+              0.0,
+              0.7142857142857143,
+              0.013725490196078431
+            ],
+            [
+              0.0,
+              0.7142857142857143,
+              0.013725490196078431
+            ],
+            [
+              0.0,
+              0.004115226337448603,
+              0.4764705882352941
+            ]
+          ],
+          "isWhite": false,
+          "isTransformTransparent": true,
+          "blackWhiteGraphPng": "/cm/7/39461/custom-info/personal_qrcode/personal_qrcode-39461-40063_blackWhiteGraph.png",
+          "grayscalePng": "/cm/7/39461/custom-info/personal_qrcode/personal_qrcode-39461-40063_blackWhiteGraph.png",
+          "needImageCompose": true,
+          "originalImageSuffix": "png",
+          "isInUse": false,
+          "id": 3960014,
+          "deleteState": 0,
+          "createTime": "2020-04-24 21:03:07",
+          "updateTime": "2020-04-24 21:03:07",
+          "createBy": 14,
+          "updateBy": 14
+        },
+        {
+          "cmId": 39461,
+          "cmCustomId": 40165,
+          "customType": "CM",
+          "infoType": "DEPARTMENT",
+          "infoTypeHump": "department",
+          "infoValue": "部门",
+          "imgUrl": "/cm/7/39461/custom-info/department/department-39461-40165.png",
+          "fontAspectRatios": [
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.309999942779541,
+              0.3199999928474426
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.8799999952316284,
+              0.4699999988079071
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.5,
+              0.3799999952316284
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.940000057220459,
+              0.47999998927116394
+            ],
+            [
+              1.600000023841858,
+              0.4000000059604645
+            ],
+            [
+              1.899999976158142,
+              0.4699999988079071
+            ],
+            [
+              1.899999976158142,
+              0.4699999988079071
+            ],
+            [
+              1.7599999904632568,
+              0.4399999976158142
+            ],
+            [
+              1.6699999570846558,
+              0.41999998688697815
+            ],
+            [
+              1.6699999570846558,
+              0.41999998688697815
+            ],
+            [
+              1.6200000047683716,
+              0.4099999964237213
+            ]
+          ],
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "needImageCompose": true,
+          "isInUse": false,
+          "id": 3960015,
+          "deleteState": 0,
+          "createTime": "2020-04-24 21:03:08",
+          "updateTime": "2020-04-24 21:03:09",
+          "createBy": 14,
+          "updateBy": -2
+        },
+        {
+          "cmId": 39461,
+          "cmCustomId": 40165,
+          "customType": "CM",
+          "infoType": "POSITION",
+          "infoTypeHump": "position",
+          "infoValue": "职位",
+          "imgUrl": "/cm/7/39461/custom-info/position/position-39461-40165.png",
+          "fontAspectRatios": [
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.2799999713897705,
+              0.3199999928474426
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.8799999952316284,
+              0.4699999988079071
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.5,
+              0.3799999952316284
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.940000057220459,
+              0.47999998927116394
+            ],
+            [
+              1.600000023841858,
+              0.4000000059604645
+            ],
+            [
+              1.940000057220459,
+              0.47999998927116394
+            ],
+            [
+              1.940000057220459,
+              0.47999998927116394
+            ],
+            [
+              1.7599999904632568,
+              0.4399999976158142
+            ],
+            [
+              1.6699999570846558,
+              0.41999998688697815
+            ],
+            [
+              1.6699999570846558,
+              0.41999998688697815
+            ],
+            [
+              1.6200000047683716,
+              0.4099999964237213
+            ]
+          ],
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "needImageCompose": true,
+          "isInUse": false,
+          "id": 3960016,
+          "deleteState": 0,
+          "createTime": "2020-04-24 21:03:08",
+          "updateTime": "2020-04-24 21:03:09",
+          "createBy": 14,
+          "updateBy": -2
+        },
+        {
+          "cmId": 39461,
+          "cmCustomId": 40165,
+          "customType": "CM",
+          "infoType": "SERIAL_NUMBER",
+          "infoTypeHump": "serialNumber",
+          "infoValue": "编号",
+          "imgUrl": "/cm/7/39461/custom-info/serial_number/serial_number-39461-40165.png",
+          "fontAspectRatios": [
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.2799999713897705,
+              0.3199999928474426
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.8799999952316284,
+              0.4699999988079071
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.5,
+              0.3799999952316284
+            ],
+            [
+              1.7100000381469729,
+              0.4300000071525574
+            ],
+            [
+              1.940000057220459,
+              0.47999998927116394
+            ],
+            [
+              1.659999966621399,
+              0.4099999964237213
+            ],
+            [
+              1.899999976158142,
+              0.4699999988079071
+            ],
+            [
+              1.940000057220459,
+              0.47999998927116394
+            ],
+            [
+              1.7599999904632568,
+              0.4399999976158142
+            ],
+            [
+              1.6699999570846558,
+              0.41999998688697815
+            ],
+            [
+              1.6699999570846558,
+              0.41999998688697815
+            ],
+            [
+              1.6200000047683716,
+              0.4099999964237213
+            ]
+          ],
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "needImageCompose": true,
+          "isInUse": false,
+          "id": 3960017,
+          "deleteState": 0,
+          "createTime": "2020-04-24 21:03:08",
+          "updateTime": "2020-04-24 21:03:09",
+          "createBy": 14,
+          "updateBy": -2
+        },
+        {
+          "cmId": 39461,
+          "cmCustomId": 40165,
+          "customType": "CM",
+          "infoType": "ORG_URL",
+          "infoTypeHump": "orgUrl",
+          "infoValue": "www.google.com",
+          "imgUrl": "/cm/7/39461/custom-info/org-url/org-url-39461-40165.png",
+          "fontAspectRatios": [
+            [
+              6.0,
+              0.029999999329447743
+            ],
+            [
+              6.0,
+              0.029999999329447743
+            ],
+            [
+              5.03000020980835,
+              0.019999999552965164
+            ],
+            [
+              7.800000190734863,
+              0.03999999910593033
+            ],
+            [
+              7.940000057220459,
+              0.03999999910593033
+            ],
+            [
+              6.0,
+              0.029999999329447743
+            ],
+            [
+              6.139999866485596,
+              0.029999999329447743
+            ],
+            [
+              5.75,
+              0.029999999329447743
+            ],
+            [
+              12.0,
+              0.05999999865889549
+            ],
+            [
+              6.769999980926514,
+              0.029999999329447743
+            ],
+            [
+              6.829999923706055,
+              0.029999999329447743
+            ],
+            [
+              8.739999771118164,
+              0.03999999910593033
+            ],
+            [
+              8.8100004196167,
+              0.03999999910593033
+            ],
+            [
+              5.440000057220459,
+              0.029999999329447743
+            ],
+            [
+              4.5,
+              0.019999999552965164
+            ],
+            [
+              7.46999979019165,
+              0.03999999910593033
+            ],
+            [
+              7.679999828338623,
+              0.03999999910593033
+            ]
+          ],
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "needImageCompose": true,
+          "isInUse": false,
+          "id": 3960018,
+          "deleteState": 0,
+          "createTime": "2020-04-24 21:03:08",
+          "updateTime": "2020-04-24 21:03:09",
+          "createBy": 14,
+          "updateBy": -2
+        },
+        {
+          "cmId": 39461,
+          "cmCustomId": 40165,
+          "customType": "CM",
+          "infoType": "ADDRESS_CODE",
+          "infoTypeHump": "addressCode",
+          "infoValue": "guge",
+          "imgUrl": "/cm/7/39461/custom-info/address-code/address-code-39461-40165.png",
+          "fontAspectRatios": [
+            [
+              1.7100000381469729,
+              0.10999999940395357
+            ],
+            [
+              1.7100000381469729,
+              0.10999999940395357
+            ],
+            [
+              1.3300000429153442,
+              0.07999999821186066
+            ],
+            [
+              2.430000066757202,
+              0.15000000596046448
+            ],
+            [
+              2.259999990463257,
+              0.14000000059604645
+            ],
+            [
+              1.659999966621399,
+              0.10000000149011612
+            ],
+            [
+              1.7699999809265137,
+              0.10999999940395357
+            ],
+            [
+              1.649999976158142,
+              0.10000000149011612
+            ],
+            [
+              3.430000066757202,
+              0.20999999344348907
+            ],
+            [
+              1.940000057220459,
+              0.119999997317791
+            ],
+            [
+              1.940000057220459,
+              0.119999997317791
+            ],
+            [
+              2.4200000762939453,
+              0.15000000596046448
+            ],
+            [
+              2.450000047683716,
+              0.15000000596046448
+            ],
+            [
+              1.7400000095367432,
+              0.10000000149011612
+            ],
+            [
+              1.190000057220459,
+              0.07000000029802322
+            ],
+            [
+              2.109999895095825,
+              0.12999999523162842
+            ],
+            [
+              2.1600000858306885,
+              0.14000000059604645
+            ]
+          ],
+          "isWhite": false,
+          "isTransformTransparent": false,
+          "needImageCompose": true,
+          "isInUse": false,
+          "id": 3960019,
+          "deleteState": 0,
+          "createTime": "2020-04-24 21:03:08",
+          "updateTime": "2020-04-24 21:03:09",
+          "createBy": 14,
+          "updateBy": -2
+        },
+        {
+          "cmId": 39461,
+          "cmCustomId": 40165,
+          "customType": "CM",
+          "infoType": "PHOTO",
+          "infoTypeHump": "photo",
+          "infoValue": "/cm/7/39461/custom-info/photo/photo-39461-40063.png",
+          "imgUrl": "/cm/7/39461/custom-info/photo/photo-39461-40063.png",
+          "aspectRatio": 0.84,
+          "colorTone": [
+            "#FF8A01",
+            "#FFE8CE",
+            "#0176FF",
+            "#4BACFF"
+          ],
+          "colorRgbTone": [
+            [
+              255,
+              138,
+              1
+            ],
+            [
+              255,
+              232,
+              206
+            ],
+            [
+              1,
+              118,
+              255
+            ],
+            [
+              75,
+              172,
+              255
+            ]
+          ],
+          "colorHSLTone": [
+            [
+              0.08989501312335957,
+              1.0,
+              0.5019607843137255
+            ],
+            [
+              0.08843537414965985,
+              1.0,
+              0.903921568627451
+            ],
+            [
+              0.5898950131233596,
+              1.0,
+              0.5019607843137255
+            ],
+            [
+              0.5768518518518518,
+              1.0,
+              0.6470588235294118
+            ]
+          ],
+          "colorCMYKRgbTone": [
+            [
+              240,
+              134,
+              26
+            ],
+            [
+              252,
+              228,
+              203
+            ],
+            [
+              47,
+              107,
+              180
+            ],
+            [
+              90,
+              160,
+              216
+            ]
+          ],
+          "colorCMYKHSLTone": [
+            [
+              0.08411214953271029,
+              0.8770491803278688,
+              0.5215686274509804
+            ],
+            [
+              0.08503401360544222,
+              0.8909090909090913,
+              0.892156862745098
+            ],
+            [
+              0.5914786967418547,
+              0.5859030837004405,
+              0.4450980392156863
+            ],
+            [
+              0.5740740740740741,
+              0.6176470588235295,
+              0.6
+            ]
+          ],
+          "isWhite": false,
+          "isTransformTransparent": true,
+          "blackWhiteGraphPng": "/cm/7/39461/custom-info/photo/photo-39461-40063_blackWhiteGraph.png",
+          "grayscalePng": "/cm/7/39461/custom-info/photo/photo-39461-40063_blackWhiteGraph.png",
+          "needImageCompose": true,
+          "originalImageSuffix": "png",
+          "isInUse": false,
+          "id": 3960020,
+          "deleteState": 0,
+          "createTime": "2020-04-24 21:03:08",
+          "updateTime": "2020-04-24 21:03:08",
+          "createBy": 14,
+          "updateBy": 14
+        }
+      ],
+      "authStateName": "已提交",
+      "id": 40165,
+      "deleteState": 0
+    }
+  }
+}
