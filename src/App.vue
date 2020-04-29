@@ -1,7 +1,7 @@
 <template>
-    <div id="app">
+    <div id="app" style="width: 100%;position: relative">
         <img alt="Vue logo" src="./assets/logo.jpg">
-        <SvgRender :dataMapping="dataMapping" :graphData="graphData.viDesign"/>
+        <SvgRender :dataMapping="dataMapping" :graphData="graphData.viDesign" style="width: 100%"/>
         <div>
             <button @click="changeR()">change</button>
         </div>
@@ -11,14 +11,32 @@
 <script>
     import SvgRender from './components/SvgRender.vue'
     import viDesign from './assets/data/vi_design.json'
+    import state from './assets/data/state.json'
 
+    const cmContent = state.payload.cmCustomInfo;
+    const cmCustomInfos = state.payload.cmCustom.cmCustomInfos;
+    const cmInfos = {};
+    for (let cmcInfo of cmCustomInfos) {
+        let key = cmcInfo.infoType;
+        cmInfos[key] = {
+            content: cmContent[key],
+            aspectRatio: cmcInfo.aspectRatio,
+        }
+    }
     viDesign.payload.detailImages[0].pgDesignAreaImageLabels.forEach((designArea)=>{
-        if (designArea.infoType==="LOGO"){
+        const infoType = designArea.infoType;
+        const cmInfo = cmInfos[infoType];
+        if (!cmInfo){
+            return;
+        }
+        let content = cmInfo.content;
+        designArea.aspectRatio = cmInfo.aspectRatio;
+        if (infoType==="LOGO" || infoType==="PERSONAL_QRCODE" || infoType==="PHOTO"){
             designArea.graphType = 'image';
-            designArea.href = "../image/logo.jpg";
+            designArea.href = content ? content : null;
         }else{
             designArea.graphType = 'text';
-            designArea.text = "wwww.tzding.com";
+            designArea.text = content ? content : null;
         }
     });
 
@@ -31,6 +49,7 @@
             return {
                 dataMapping: {
                     "graphs": "pgDesignAreaImageLabels",
+                    "bgImage": "file",
                     itemMapping: {
                         "graphType": "graphType",
                     }
@@ -63,7 +82,7 @@
             }
         },
         mounted() {
-
+            console.log("app.vue mounted");
         },
         methods: {
             changeR() {

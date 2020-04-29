@@ -5,13 +5,14 @@
         transformOrigin:centerString
        }
     ">
-        <image v-if="graph[dataMapping.graphType]==='image'" :href="graph.href" :x="graph.x" :y="graph.y"
-               :width="graph.width" :height="graph.height"
-               :fill="graph.color || 'black'"/>
+        <image v-if="graph[dataMapping.graphType]==='image'" :href="graph.href" :x="virtualLeft" :y="virtualTop"
+               :width="widthPct" :height="heightPct"
+               :fill="graph.color || 'black'" :name="'graph-'+graph.id"/>
 
-        <text v-if="graph[dataMapping.graphType]==='text'" :x="graph.x" :y="graph.y"
-              :fill="graph.color || 'black'"
-              alignment-baseline="hanging" text-anchor="start"
+        <text v-if="graph[dataMapping.graphType]==='text'" :x="virtualLeft" :y="virtualTop"
+              :fill="graph.color || 'black'" :textLength="boundaryWidthPct" :font-size="graph.height"
+              :font-family = "graph.fontFamily.fontName"
+              alignment-baseline="hanging" text-anchor="start" lengthAdjust="spacing"
         >{{graph.text}}
         </text>
     </g>
@@ -25,17 +26,7 @@
                 graphType: String,
             },
             graph: Object,
-            // svgData: {
-            //     title:String,
-            //     x:Number,
-            //     y:Number,
-            //     graphs:[{
-            //         x:Number,
-            //         y:Number,
-            //         r:Number,
-            //         id:Number
-            //     }]
-            // },
+            panel: Object,
         },
         // data: function () {
         //     return {
@@ -50,14 +41,43 @@
             console.log(".....");
         },
         computed: {
-            centerX() {
-                return this.graph.x + this.graph.width / 2;
+            left() {
+                return this.graph.x - this.graph.width / 2;
             },
-            centerY() {
-                return this.graph.y + this.graph.height / 2;
+            top() {
+                return this.graph.y - this.graph.height / 2;
+            },
+            virtualLeft() {
+                return (this.left* 100 / this.panel.width) + "%";
+            },
+            virtualTop() {
+                return (this.top* 100 / this.panel.height) + "%";
             },
             centerString() {
-                return this.centerX + 'px ' + this.centerY + 'px';
+                return this.graph.x + 'px ' + this.graph.y + 'px';
+            },
+            virtualHeight() {
+                const area = this.graph.width * this.graph.height;
+                return this.graph.aspectRatio ? Math.sqrt(area / this.graph.aspectRatio): null;
+            },
+            virtualWidth(){
+                return this.graph.aspectRatio ? this.virtualHeight * this.graph.aspectRatio : null;
+            },
+            widthPct() {
+                return this.virtualWidth ?
+                    ((this.virtualWidth * 100 / this.panel.width).toFixed(2) + "%") :
+                    null;
+            },
+            heightPct() {
+                return this.virtualHeight ?
+                    ((this.virtualHeight * 100 / this.panel.height).toFixed(2) + "%") :
+                    null;
+            },
+            boundaryWidth(){
+                return this.graph.width * this.graph.boundaryScaleX;
+            },
+            boundaryWidthPct(){
+                return (this.boundaryWidth * 100 / this.panel.width).toFixed(2) + "%"
             }
         }
         ,

@@ -3,12 +3,12 @@
   "payload": {
     "cmCustomInfo": {
       "NICK_NAME": "谷歌",
-      "PERSONAL_QRCODE": "/cm/7/39461/custom-info/personal_qrcode/personal_qrcode-39461-40063.png",
+      "PERSONAL_QRCODE": "./image/personal_qrcode.png",
       "SERIAL_NUMBER": "编号",
-      "LOGO": "/cm/7/39461/custom-info/logo/logo-39461-40063.png",
+      "LOGO": "./image/logo-google.png",
       "DEPARTMENT": "部门",
       "EN_SLOGAN": "英文SLOGAN",
-      "PHOTO": "/cm/7/39461/custom-info/photo/photo-39461-40063.png",
+      "PHOTO": "./image/photo.png",
       "ADDRESS_CODE": "guge",
       "ORG_URL": "www.google.com",
       "FULL_NAME": "谷歌",
