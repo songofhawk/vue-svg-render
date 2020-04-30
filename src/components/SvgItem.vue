@@ -5,14 +5,14 @@
         transformOrigin:centerString
        }
     ">
-        <image v-if="graph[dataMapping.graphType]==='image'" :href="graph.href" :x="virtualLeft" :y="virtualTop"
+        <image v-if="graph[dataMapping.graphType]==='image'" :href="graph.href" :x="leftPct" :y="topPct"
                :width="widthPct" :height="heightPct"
                :fill="graph.color || 'black'" :name="'graph-'+graph.id"/>
 
-        <text v-if="graph[dataMapping.graphType]==='text'" :x="virtualLeft" :y="virtualTop"
+        <text v-if="graph[dataMapping.graphType]==='text'" :x="leftPct" :y="topPct"
               :fill="graph.color || 'black'" :textLength="boundaryWidthPct" :font-size="graph.height"
               :font-family = "graph.fontFamily.fontName"
-              alignment-baseline="hanging" text-anchor="start" lengthAdjust="spacing"
+              alignment-baseline="hanging" text-anchor="start" lengthAdjust="spacing" font-size-adjust=""
         >{{graph.text}}
         </text>
     </g>
@@ -48,10 +48,28 @@
                 return this.graph.y - this.graph.height / 2;
             },
             virtualLeft() {
-                return (this.left* 100 / this.panel.width) + "%";
+                if (this.graph.align==="left"){
+                    return this.left;
+                }else if (this.graph.align==="right"){
+                    return this.graph.x + this.graph.width / 2 - this.virtualWidth;
+                }else {
+                    return this.graph.x - this.virtualWidth/2;
+                }
+            },
+            leftPct(){
+                return this.virtualLeft ? (this.virtualLeft* 100 / this.panel.width) + "%" : null;
             },
             virtualTop() {
-                return (this.top* 100 / this.panel.height) + "%";
+                if (this.graph.verticalAlign==="top"){
+                    return this.top;
+                }else if (this.graph.align==="bottom"){
+                    return this.graph.y + this.graph.height / 2 - this.virtualHeight;
+                }else {
+                    return this.graph.y - this.virtualHeight/2;
+                }
+            },
+            topPct(){
+                return this.virtualTop ? (this.virtualTop* 100 / this.panel.height) + "%" : null;
             },
             centerString() {
                 return this.graph.x + 'px ' + this.graph.y + 'px';
