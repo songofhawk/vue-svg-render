@@ -1,8 +1,8 @@
 <template>
-    <div id="svg-render" style="position: absolute;margin: 0;padding: 0;border: none;font-size: 1em;width: 98%">
+    <div id="svg-render" style="position: absolute;margin: 0;padding: 0;border: none;font-size: 1em;width: 100%">
         <img :src="graphData[dataMapping.bgImage]" style="left: 0; top: 0; display:block ;width: 100%" alt="正在加载背景图..."/>
-        <svg xmlns="http://www.w3.org/2000/svg"
-             style="position:absolute; left: 0; top: 0; width: 100%; height: 100%;">
+        <svg id="svg-render-svg" xmlns="http://www.w3.org/2000/svg" :viewBox="viewBoxSize"
+             style="position:absolute; left: 0; top: 0; width: 100%; ">
             <SvgItem v-for="graph in graphData[dataMapping.graphs]" :key="graph.id"
                      :dataMapping="dataMapping.itemMapping" :graph="graph" :panel="panelDataForGraph">
             </SvgItem>
@@ -51,6 +51,9 @@
                   height:this.graphData.height
               }
             },
+            viewBoxSize(){
+                return "0 0 "+this.graphData.width+" "+this.graphData.height;
+            }
         },
         methods: {
             getTransformOrigin(left, top, width, height) {

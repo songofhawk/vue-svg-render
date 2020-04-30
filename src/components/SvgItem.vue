@@ -5,14 +5,14 @@
         transformOrigin:centerString
        }
     ">
-        <image v-if="graph[dataMapping.graphType]==='image'" :href="graph.href" :x="leftPct" :y="topPct"
-               :width="widthPct" :height="heightPct"
+        <image v-if="graph[dataMapping.graphType]==='image'" :href="graph.href" :x="virtualLeft" :y="virtualTop"
+               :width="virtualWidth" :height="virtualHeight"
                :fill="graph.color || 'black'" :name="'graph-'+graph.id"/>
 
-        <text v-if="graph[dataMapping.graphType]==='text'" :x="leftPct" :y="topPct"
-              :fill="graph.color || 'black'" :textLength="boundaryWidthPct" :font-size="graph.height"
+        <text v-if="graph[dataMapping.graphType]==='text'" :x="virtualLeft" :y="virtualTop"
+              :fill="graph.color || 'black'" :font-size="graph.height"
               :font-family = "graph.fontFamily.fontName"
-              alignment-baseline="hanging" text-anchor="start" lengthAdjust="spacing" font-size-adjust=""
+              alignment-baseline="hanging" text-anchor="start"
         >{{graph.text}}
         </text>
     </g>
@@ -56,9 +56,6 @@
                     return this.graph.x - this.virtualWidth/2;
                 }
             },
-            leftPct(){
-                return this.virtualLeft ? (this.virtualLeft* 100 / this.panel.width) + "%" : null;
-            },
             virtualTop() {
                 if (this.graph.verticalAlign==="top"){
                     return this.top;
@@ -67,9 +64,6 @@
                 }else {
                     return this.graph.y - this.virtualHeight/2;
                 }
-            },
-            topPct(){
-                return this.virtualTop ? (this.virtualTop* 100 / this.panel.height) + "%" : null;
             },
             centerString() {
                 return this.graph.x + 'px ' + this.graph.y + 'px';
@@ -81,22 +75,10 @@
             virtualWidth(){
                 return this.graph.aspectRatio ? this.virtualHeight * this.graph.aspectRatio : null;
             },
-            widthPct() {
-                return this.virtualWidth ?
-                    ((this.virtualWidth * 100 / this.panel.width).toFixed(2) + "%") :
-                    null;
-            },
-            heightPct() {
-                return this.virtualHeight ?
-                    ((this.virtualHeight * 100 / this.panel.height).toFixed(2) + "%") :
-                    null;
-            },
             boundaryWidth(){
                 return this.graph.width * this.graph.boundaryScaleX;
             },
-            boundaryWidthPct(){
-                return (this.boundaryWidth * 100 / this.panel.width).toFixed(2) + "%"
-            }
+
         }
         ,
         methods: {}
